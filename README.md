@@ -4,7 +4,7 @@ MCP project repository hosts the source code for the demostration of MCP servers
 ## Steps to quickly setup the MCP demo
 
 ### Step 1: Development Environment Setup
-This project requires Python 3.8 or higher. You can download Python [here](#https://www.python.org/downloads) for Windows. First, you need to instal uv and nodejs. Second, create *.venv* python environment.
+This project requires Python 3.8 or higher. You can download Python [here](#https://www.python.org/downloads) for Windows. First, you need to install uv and nodejs. Second, create *.venv* python environment.
  ```bat
 cd mcp_project
 uv init
@@ -20,7 +20,10 @@ npx @modelcontextprotocol/inspector uv run research_server.py
 
 ### Step 2: Cloude Desktop Setup
 For installling Claude Desktop, read [Coude Support](#https://support.claude.com/en/articles/10065433-installing-claude-desktop).
-Then, copy the claude_desktop_config.json to Windows: %APPDATA%\Claude\claude_desktop_config.json
+Then, copy the claude_desktop_config.json to Windows:
+ ```bat
+%APPDATA%\Claude\claude_desktop_config.json
+```
 
 
 
