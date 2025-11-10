@@ -4,6 +4,7 @@ __pycache__
 venv/
 papers/
 uv.lock
+.python-version
 main.py
 pyproject.toml
 .vscode/
