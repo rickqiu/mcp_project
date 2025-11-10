@@ -104,6 +104,12 @@ uv venv
 uv add mcp arxiv anthropic python-dotenv nest_asyncio
 ```
 
+Us the following command to activate venv in macOS.
+```bat
+source ./venv/bin/activate
+```
+
+
 Third, MCP Inspector is an interactive developer tool for testing and debugging MCP servers. Run the Inspector thorough the following command.
  ```bat
 npx @modelcontextprotocol/inspector uv run research_server.py
@@ -112,9 +118,15 @@ npx @modelcontextprotocol/inspector uv run research_server.py
 ### Step 2: Cloude Desktop Setup
 For installling Claude Desktop, read [Coude Support](#https://support.claude.com/en/articles/10065433-installing-claude-desktop).
 Then, copy the claude_desktop_config.json to Windows:
- ```bat
+```bat
 %APPDATA%\Claude\claude_desktop_config.json
 ```
+Or copy the claude_desktop_config.jso to macOS:
+```bat
+~/Library/Application Support/Claude/claude_desktop_config.json
+```
+
+
 
 ## Development Workflows
 
