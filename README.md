@@ -117,66 +117,6 @@ Start Here
 └─────────────────┘
 ```
 
-### Testing Workflow
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│     Method 1    │    │     Method 2    │    │     Method 3    │
-│                 │    │                 │    │                 │
-│ MCP Inspector   │    │ Claude Desktop  │    │ Direct Python   │
-│                 │    │                 │    │                 │
-│ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │
-│ │Start Server │ │    │ │Config File  │ │    │ │Command Line │ │
-│ │with Inspector │    │ │Integration  │ │    │ │Testing      │ │
-│ └─────────────┘ │    │ └─────────────┘ │    │ └─────────────┘ │
-│                 │    │                 │    │                 │
-│ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │
-│ │Interactive  │ │    │ │Real Usage   │ │    │ │Debug Mode   │ │
-│ │Web UI       │ │    │ │Environment  │ │    │ │Direct Call  │ │
-│ └─────────────┘ │    │ └─────────────┘ │    │ └─────────────┘ │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-### Data Flow Diagram
-```
-User Query: "Find papers on quantum computing"
-            │
-            ▼
-    ┌──────────────┐
-    │ Claude       │
-    │ Desktop      │
-    │              │
-    └──────┬───────┘
-           │ MCP Protocol
-           │ (JSON-RPC)
-           ▼
-    ┌──────────────┐
-    │ Research     │
-    │ Server       │
-    │ (FastMCP)    │
-    └──────┬───────┘
-           │
-           ▼
-    ┌──────────────┐         ┌─────────────┐
-    │ search_      │────────►│ arXiv API   │
-    │ papers()     │         │             │
-    │              │◄────────│ GET papers  │
-    └──────┬───────┘         └─────────────┘
-           │
-           ▼
-    ┌──────────────┐         ┌─────────────┐
-    │ Process &    │────────►│ File System │
-    │ Format       │         │             │
-    │ Results      │         │papers/topic/│
-    └──────┬───────┘         │papers.json  │
-           │                 └─────────────┘
-           ▼
-    ┌──────────────┐
-    │ Return to    │
-    │ Claude       │
-    │              │
-    └──────────────┘
-```
-
 
 
 
