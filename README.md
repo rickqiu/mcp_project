@@ -121,7 +121,7 @@ Then, copy the claude_desktop_config.json to Windows:
 ```bat
 %APPDATA%\Claude\claude_desktop_config.json
 ```
-Or copy the claude_desktop_config.jso to macOS:
+Or copy the claude_desktop_config.json to macOS:
 ```bat
 ~/Library/Application Support/Claude/claude_desktop_config.json
 ```
