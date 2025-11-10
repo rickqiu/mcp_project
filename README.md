@@ -40,58 +40,6 @@ User Query ──► Claude Desktop ──► MCP Server ──► arXiv API
 Results   ◄─────────────────────────────────────────┘
 ```
 
-### File Organization Flow
-```
-search_papers("machine learning", 5)
-                    │
-                    ▼
-            ┌───────────────┐
-            │  Create Dir   │
-            │ papers/       │
-            │ machine_      │
-            │ learning/     │
-            └───────┬───────┘
-                    │
-                    ▼
-            ┌───────────────┐
-            │ Download &    │
-            │ Parse Papers  │
-            │ from arXiv    │
-            └───────┬───────┘
-                    │
-                    ▼
-            ┌───────────────┐
-            │ Save to       │
-            │ papers_info.  │
-            │ json          │
-            └───────────────┘
-```
-
-### MCP Tool Interaction Flow
-```
-┌─────────────┐    Tool: search_papers()
-│   Claude    │───────────────────────┐
-│             │                       │
-│   Request   │   Tool: extract_info()│
-│             │◄──────────────────────┤
-└─────────────┘                       │
-       │                              │
-       ▼                              │
-┌─────────────┐ Resource: papers://folders  
-│    MCP      │◄──────────────────────┘
-│   Server    │                       │
-│             │    Resource: papers://{topic}
-│             │◄──────────────────────┘
-└─────────────┘
-       │
-       ▼
-┌─────────────┐
-│   File      │
-│   System    │
-│             │
-└─────────────┘
-```
-
 ## Steps to quickly setup the MCP demo
 
 ### Step 1: Development Environment Setup
