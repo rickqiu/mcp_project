@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+.venv/
+venv/
+papers/
+uv.lock
+project.toml
+.vscode/
