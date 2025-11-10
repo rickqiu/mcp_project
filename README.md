@@ -6,7 +6,7 @@ MCP project repository hosts the source code for the demostration of MCP servers
 ### System Architecture
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Claude Desktop │    │  MCP Inspector │    │   Research      │
+│  Claude Desktop │    │  MCP Inspector  │    │   Research      │
 │                 │◄──►│                 │◄──►│   Server        │
 │  - Chat Client  │    │  - Debug Tool   │    │  - arXiv API    │
 │  - MCP Client   │    │  - Test Server  │    │  - File Storage │
