@@ -121,7 +121,7 @@ Or copy the claude_desktop_config.json to macOS:
 ```bat
 ~/Library/Application Support/Claude/claude_desktop_config.json
 ```
-**Gotcha:**  If the Developer is not shown in the Cluase Desktop, navigate to Help > Troubleshooting. Then, select Enable Developer Mode.
+**Gotcha:**  If Cluase Desktop does not have the Developer Menu item, navigate to Help > Troubleshooting. Then, select Enable Developer Mode.
 
 
 ## Development Workflows
