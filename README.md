@@ -40,7 +40,7 @@ User Query ──► Claude Desktop ──► MCP Server ──► arXiv API
 Results   ◄─────────────────────────────────────────┘
 ```
 
-## Steps to quickly setup the MCP demo
+## Steps to setup the MCP demo
 
 ### Step 1: Development Environment Setup
 This project requires Python 3.8 or higher. You can download Python [here](#https://www.python.org/downloads) for Windows. First, you need to install uv and nodejs. Second, create *.venv* python environment.
